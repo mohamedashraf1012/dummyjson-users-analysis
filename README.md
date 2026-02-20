@@ -113,7 +113,7 @@ Open the notebook:
 
 notebooks/analysis.ipynb
 ```
-🎓 Academic Context
+## 🎓 Academic Context
 
 This project was developed as part of an ITI Data Analysis Lab, focusing on:
 
@@ -123,9 +123,9 @@ Working with APIs
 
 Clean and structured GitHub projects
 
-👤 Author
+## 👤 Author
 
 Mohamed Ashraf
-ITI – Data Analysis Track
+ITI – Data Engineering Track
 
-⭐ If you find this project useful, feel free to explore the repository.
+# ⭐ If you find this project useful, feel free to explore the repository.
