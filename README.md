@@ -1,24 +1,64 @@
-﻿# DummyJSON Users Data Analysis
+﻿# 📊 DummyJSON Users Data Analysis
 
-This project analyzes users data fetched from DummyJSON API using Python, Pandas, and Seaborn.
+> Python data analysis project exploring user demographics using the DummyJSON API.
 
-## Project Structure
-- data/        -> Raw data (CSV)
-- src/         -> Python scripts
-- notebooks/   -> Jupyter notebook analysis
-- outputs/     -> Exported results (CSV)
-- plots/       -> Visualizations (PNG)
+---
 
-## How to Run
-1) Install requirements:
+## 🚀 Project Overview
+This project fetches user data from the DummyJSON API and performs:
+- Data cleaning and preparation
+- Exploratory data analysis (EDA)
+- Statistical insights
+- Data visualization using Seaborn
+
+---
+
+## 🧩 Project Structure
+
+dummyjson-users-analysis/
+│
+├── data/ # Raw data (CSV)
+├── src/ # Python scripts
+├── notebooks/ # Jupyter analysis
+├── outputs/ # Analysis results (CSV)
+├── plots/ # Visualizations (PNG)
+└── README.md
+
+
+---
+
+## 📈 Key Analysis
+- Average age of users
+- Average age by gender
+- Users distribution by gender
+- Top 10 cities by number of users
+- Relationship between age, height, and weight
+
+---
+
+## 📊 Sample Visualizations
+<p align="center">
+  <img src="plots/plot1_age_distribution.png" width="45%" />
+  <img src="plots/plot4_age_vs_height.png" width="45%" />
+</p>
+
+<p align="center">
+  <img src="plots/plot5_age_vs_weight.png" width="45%" />
+  <img src="plots/plot2_users_per_gender.png" width="45%" />
+</p>
+
+---
+
+## 🛠️ Tools & Libraries
+- Python
+- Pandas
+- NumPy
+- Seaborn
+- Matplotlib
+
+---
+
+## ▶️ How to Run
+```bash
 pip install -r requirements.txt
-
-2) (Optional) Fetch data:
 python src/fetch_users.py
-
-3) Open notebook:
-notebooks/analysis.ipynb
-
-## Author
-Mohamed Ashraf
-This project was created as part of an ITI Data Analysis lab.
