@@ -23,7 +23,7 @@ It demonstrates a complete data analysis workflow including:
 ---
 
 ## 🧩 Project Structure
-
+```bash
 
 dummyjson-users-analysis/
 │
@@ -52,7 +52,7 @@ dummyjson-users-analysis/
 ├── requirements.txt
 └── README.md
 
-
+```
 ---
 
 ## 📈 Key Analysis Performed
