@@ -105,14 +105,15 @@ dummyjson-users-analysis/
 ### 1️⃣ Install dependencies
 ```bash
 pip install -r requirements.txt
-2️⃣ (Optional) Fetch data from the API
+```
+### 2️⃣ (Optional) Fetch data from the API
 python src/fetch_users.py
-3️⃣ Run the analysis
+### 3️⃣ Run the analysis
 
 Open the notebook:
 
 notebooks/analysis.ipynb
-```
+
 ## 🎓 Academic Context
 
 This project was developed as part of an ITI Data Analysis Lab, focusing on:
