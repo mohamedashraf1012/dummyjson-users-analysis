@@ -21,3 +21,4 @@ notebooks/analysis.ipynb
 
 ## Author
 Mohamed Ashraf
+This project was created as part of an ITI Data Analysis lab.
