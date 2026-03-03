@@ -2,3 +2,6 @@
 .ipynb_checkpoints/
 .env
 .DS_Store
+data/users_data.csv
+outputs_docker/
+plots_docker/
