@@ -23,6 +23,53 @@ This project demonstrates a complete data analysis workflow:
 
 ---
 
+## 🔄 Data Pipeline Flow
+
+The project follows a structured, automated data pipeline:
+
+1. Fetch data from DummyJSON API  
+2. Normalize and structure JSON response  
+3. Persist raw data to CSV  
+4. Clean and validate numeric fields  
+5. Perform exploratory and statistical analysis  
+6. Generate structured CSV outputs  
+7. Produce visualizations  
+8. Store results in dedicated output directories  
+
+This pipeline is fully automated through `run_pipeline.py`.
+
+---
+
+## 🏗️ Architecture Overview
+
+```
+          ┌────────────────────┐
+          │  DummyJSON API     │
+          └─────────┬──────────┘
+                    │
+                    ▼
+        ┌──────────────────────┐
+        │   run_pipeline.py    │
+        │  (Data Processing)   │
+        └─────────┬────────────┘
+                  │
+        ┌─────────┴──────────┐
+        ▼                    ▼
+  ┌──────────────┐     ┌──────────────┐
+  │ outputs_csv  │     │   plots_png  │
+  └──────────────┘     └──────────────┘
+                  │
+                  ▼
+           Docker Container
+```
+
+The container encapsulates:
+- Python runtime
+- All dependencies
+- Automated execution logic
+- Volume-mounted output persistence
+
+---
 ## 🧩 Project Structure
 
 ```bash
