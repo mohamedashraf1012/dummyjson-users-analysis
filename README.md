@@ -5,22 +5,21 @@
 ![Seaborn](https://img.shields.io/badge/Seaborn-Visualization-orange)
 ![Docker](https://img.shields.io/badge/Docker-Enabled-2496ED)
 
-> ⭐ A Python-based data analysis project that explores user demographics using data fetched from the DummyJSON API — now with an automated pipeline and Docker support.
+A Python-based data analysis project that explores user demographics using data fetched from the DummyJSON API.  
+The project includes a fully automated pipeline and Docker support.
 
 ---
 
 ## 🚀 Project Overview
 
-This project focuses on analyzing user data obtained from the **DummyJSON API**.  
-It demonstrates a complete data analysis workflow including:
+This project demonstrates a complete data analysis workflow:
 
-- ⭐ Fetching data from a REST API  
-- ⭐ Cleaning and preparing the data  
-- ⭐ Exploratory Data Analysis (EDA)  
-- ⭐ Statistical analysis  
-- ⭐ Data visualization using Seaborn  
-- ⭐ Saving results as CSV files and plots  
-- ⭐ Running the entire pipeline automatically using **Docker**
+- Fetching data from a REST API  
+- Cleaning and preparing the dataset  
+- Exploratory Data Analysis (EDA)  
+- Statistical analysis  
+- Data visualization using Seaborn  
+- Automated execution using Docker  
 
 ---
 
@@ -29,22 +28,20 @@ It demonstrates a complete data analysis workflow including:
 ```bash
 dummyjson-users-analysis/
 │
-├── data/                    # Generated data (CSV)
+├── data/                    # Generated raw data (CSV)
 │   └── users_data.csv
 │
-├── src/                     # Python scripts
+├── src/
 │   └── run_pipeline.py      # End-to-end automated pipeline
 │
-├── notebooks/               # Jupyter Notebook analysis
-│   └── analysis.ipynb
+├── notebooks/
+│   └── analysis.ipynb       # Exploratory notebook
 │
 ├── outputs/                 # Manual analysis outputs
-│
-├── plots/                   # Manual plots
+├── plots/                   # Manual visualizations
 │
 ├── outputs_docker/          # Docker pipeline outputs
-│
-├── plots_docker/            # Docker pipeline plots
+├── plots_docker/            # Docker pipeline visualizations
 │
 ├── Dockerfile
 ├── .dockerignore
@@ -54,14 +51,14 @@ dummyjson-users-analysis/
 
 ---
 
-## 📈 Key Analysis Performed
+## 📈 Key Analysis
 
-- ⭐ Average age of users  
-- ⭐ Average age by gender  
-- ⭐ Number of users per gender  
-- ⭐ Top 10 cities with the highest number of users  
-- ⭐ Average height and weight  
-- ⭐ Relationship between age and height / weight  
+- Average age of users  
+- Average age by gender  
+- User distribution by gender  
+- Top 10 cities by user count  
+- Average height and weight  
+- Correlation between age and physical attributes  
 
 ---
 
@@ -79,60 +76,50 @@ dummyjson-users-analysis/
 
 ---
 
-## 🧠 Key Findings
+## 🛠️ Technologies Used
 
-- ⭐ The average age of users is approximately in the mid-30s.  
-- ⭐ The age distribution is relatively balanced across genders.  
-- ⭐ No strong correlation was found between age and height or weight.  
-- ⭐ Some cities show significantly higher user concentration than others.  
-
----
-
-## 🛠️ Tools & Libraries Used
-
-- ⭐ **Python**
-- ⭐ **Pandas**
-- ⭐ **NumPy**
-- ⭐ **Requests**
-- ⭐ **Seaborn**
-- ⭐ **Matplotlib**
-- ⭐ **Docker (for automated execution)**
+- Python  
+- Pandas  
+- NumPy  
+- Requests  
+- Seaborn  
+- Matplotlib  
+- Docker  
 
 ---
 
-## ▶️ How to Run the Project
+## ▶️ How to Run
 
-### ✅ Option 1: Run Locally (Python)
+### Option 1 — Local Execution
 
-#### 1️⃣ Install dependencies
+Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-#### 2️⃣ Run the automated pipeline
+Run the pipeline:
 
 ```bash
 python src/run_pipeline.py
 ```
 
-⭐ Outputs will be saved in:
+Generated outputs will be saved in:
+
 - `outputs_docker/`
 - `plots_docker/`
 
 ---
 
-### 🐳 Option 2: Run with Docker (Recommended)
+### Option 2 — Docker (Recommended)
 
-#### 1️⃣ Build the image
+Build the image:
 
 ```bash
 docker build -t dummyjson-users-analysis .
 ```
 
-#### 2️⃣ Run the container
-
-⭐ This mounts folders so results are saved on your machine.
+Run the container:
 
 **Windows (PowerShell):**
 
@@ -144,7 +131,7 @@ docker run --rm `
  dummyjson-users-analysis
 ```
 
-**Linux/Mac:**
+**Linux / macOS:**
 
 ```bash
 docker run --rm \
@@ -154,27 +141,24 @@ docker run --rm \
  dummyjson-users-analysis
 ```
 
-> ⭐ **Note (Windows):** If volume mounting fails, enable drive sharing in Docker Desktop:  
-> Settings → Resources → File Sharing → enable your drive (e.g., D:)
-
 ---
 
-## 🎓 Academic Context
+## 🎓 Context
 
-This project was developed as part of an ITI Data Analysis Lab, focusing on:
+Developed as part of an ITI Data Analysis Lab, with a focus on:
 
-- ⭐ Practical data analysis skills  
-- ⭐ Working with APIs  
-- ⭐ Clean and structured GitHub projects  
-- ⭐ Production-friendly automation with Docker  
+- Structured data workflows  
+- API integration  
+- Clean repository organization  
+- Production-oriented automation  
 
 ---
 
 ## 👤 Author
 
-**Mohamed Ashraf**  
+Mohamed Ashraf  
 ITI – Data Engineering Track  
 
 ---
 
-# ⭐ If you find this project useful, feel free to explore the repository.
+If you find this project useful, feel free to explore the repository.
