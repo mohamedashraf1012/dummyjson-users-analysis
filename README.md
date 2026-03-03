@@ -133,7 +133,7 @@ python src/run_pipeline.py
 docker build -t dummyjson-users-analysis .
 ```
 #### 2️⃣ Run the container
-**This mounts folders so results are saved on your machine.**
+##### This mounts folders so results are saved on your machine.
 
 ###### Windows (PowerShell):
 ```bash
