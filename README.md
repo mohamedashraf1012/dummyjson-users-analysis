@@ -143,7 +143,7 @@ docker run --rm `
  -v "${PWD}\data:/app/data" `
  dummyjson-users-analysis
 ```
-Linux/Mac:
+###### Linux/Mac:
 ```bash
 docker run --rm \
  -v "$(pwd)/outputs_docker:/app/outputs_docker" \
